@@ -5,6 +5,8 @@ class Movie < ApplicationRecord
 
   # Validations
 
+  validates :title, {scope: [:year, :director_id]}
+
   validates :title, presence: true
 
 end
