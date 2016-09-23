@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => "directors#index"
   # Routes for the Actor resource:
   # CREATE
   get "/actors/new", :controller => "actors", :action => "new"
